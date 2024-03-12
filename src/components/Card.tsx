@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-import Image from "next/image";
+import { Avatar, AvatarImage } from "./ui/avatar";
+import { Skeleton } from "./ui/skeleton";
 
 interface Props {
   title: string;
@@ -19,13 +20,13 @@ const Card = ({ title, description, src, alt, fit, children }: Props) => {
         <ArrowRightIcon className="size-4" />
       </div>
       */}
-      <div className="relative size-[180px]">
-        <Image
+      <Avatar className="size-[180px]">
+        <AvatarImage
           className={cn(fit && "object-scale-down", "rounded-full")}
-          fill
           {...{ src, alt }}
         />
-      </div>
+        <Skeleton className="h-full w-full rounded-full bg-slate-400" />
+      </Avatar>
       <div className="flex flex-col p-4 gap-2">
         <h2 className="text-3xl font-semibold">{title}</h2>
         <p className="font-medium">{description}</p>
