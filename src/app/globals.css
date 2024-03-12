@@ -3,26 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --background: 180, 31.8%, 85.7%;
+  --background: 47, 32%, 86%;
   --foreground: 0, 0%, 0%;
 
   --card: 0, 0%, 95%;
   --card-foreground: 0, 0%, 0%;
 
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
+  --border: 0, 0%, 80%;
+  --input: 0, 0%, 50%;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: 180, 31.8%, 85.7%;
+    --background: 47, 32%, 86%;
     --foreground: 0, 0%, 0%;
 
     --card: 0, 0%, 95%;
     --card-foreground: 0, 0%, 0%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 0, 0%, 80%;
+    --input: 0, 0%, 50%;
   }
 }
 
