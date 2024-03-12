@@ -1,4 +1,4 @@
-import { cn } from "@/libs/ui-utils";
+import { cn } from "@/lib/utils";
 
 const iconStyle =
   "size-11 fill-current text-white shadow-lg rounded-lg transition-transform hover:-translate-y-1";
