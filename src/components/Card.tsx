@@ -1,4 +1,4 @@
-import { cn } from "@/libs/ui-utils";
+import { cn } from "@/lib/utils";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 

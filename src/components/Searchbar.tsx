@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/libs/ui-utils";
+import { cn } from "@/lib/utils";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
 interface Props {
