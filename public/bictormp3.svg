@@ -1,7 +1,20 @@
-<svg viewBox="0 0 87.5 87.5" xmlns="http://www.w3.org/2000/svg">
-    <g transform="translate(-8.333333333333334, -8.333333333333334) scale(1.0416666666666667)"
-        fill="#F5793B">
-        <path xmlns="http://www.w3.org/2000/svg"
-            d="M50,8C26.8,8,8,26.8,8,50c0,23.2,18.8,42,42,42s42-18.8,42-42C92,26.8,73.2,8,50,8z M27.2,55.7h-6.7V44.3h6.7V55.7z   M40.5,65.3h-6.7V34.7h6.7V65.3z M53.8,80.6h-6.7V19.4h6.7V80.6z M67.2,65.3h-6.7V34.7h6.7V65.3z M73.8,55.7V44.3h6.7v11.3H73.8z"></path>
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_3_5017)">
+        <path
+            d="M90 180C139.706 180 180 139.706 180 90C180 40.2944 139.706 0 90 0C40.2944 0 0 40.2944 0 90C0 139.706 40.2944 180 90 180Z"
+            fill="#111111" />
+        <path
+            d="M90 26C54.6476 26 26 54.6476 26 90C26 125.352 54.6476 154 90 154C125.352 154 154 125.352 154 90C154 54.6476 125.352 26 90 26ZM55.2571 98.6857H45.0476V81.3143H55.2571V98.6857ZM75.5238 113.314H65.3143V66.6857H75.5238V113.314ZM95.7905 136.629H85.581V43.3714H95.7905V136.629ZM116.21 113.314H106V66.6857H116.21V113.314ZM126.267 98.6857V81.3143H136.476V98.5333H126.267V98.6857Z"
+            fill="url(#paint0_linear_3_5017)" />
     </g>
+    <defs>
+        <linearGradient id="paint0_linear_3_5017" x1="26" y1="26" x2="154" y2="26"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#EF4136" />
+            <stop offset="1" stop-color="#FBB040" />
+        </linearGradient>
+        <clipPath id="clip0_3_5017">
+            <rect width="180" height="180" rx="90" fill="white" />
+        </clipPath>
+    </defs>
 </svg>
