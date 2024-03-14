@@ -24,7 +24,7 @@ export const projects = [
       background: "bg-[#8B5CF6]",
       foreground: "text-[#FFFFFF]",
     },
-    links: ["https://spark2.ai/"],
+    website: "https://spark2.ai/",
   },
   {
     id: "bictorchat",
@@ -36,10 +36,8 @@ export const projects = [
       background: "bg-[#39E991]",
       foreground: "text-[#262833]",
     },
-    links: [
-      "https://github.com/freckledAsf/bictorchat",
-      "https://bictorchat.vercel.app/",
-    ]
+    repo: "https://github.com/freckledAsf/bictorchat",
+    website: "https://bictorchat.vercel.app/",
   },
   {
     id: "bictormp3",
@@ -51,10 +49,8 @@ export const projects = [
       background: "bg-gradient-to-r from-[#EF4236] to-[#FBB040]",
       foreground: "text-[#111111]",
     },
-    links: [
-      "https://github.com/freckledAsf/bictor.mp3",
-      "https://demomp3.vercel.app/",
-    ],
+    repo: "https://github.com/freckledAsf/bictor.mp3",
+    website: "https://demomp3.vercel.app/",
   },
   {
     id: "registry",
@@ -66,9 +62,7 @@ export const projects = [
       background: "bg-[#000000] dark:bg-[#F1F1F1]",
       foreground: "text-[#F1F1F1] dark:text-[#000000]",
     },
-    links: [
-      "https://github.com/freckledAsf/dashboard",
-      "https://pecoso.vercel.app/",
-    ],
+    repo: "https://github.com/freckledAsf/dashboard",
+    website: "https://pecoso.vercel.app/",
   },
 ];
