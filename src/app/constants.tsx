@@ -63,8 +63,8 @@ export const projects = [
     src: "/registry.svg",
     alt: "Spark2 logo",
     color: {
-      background: "bg-[#000000]",
-      foreground: "text-[#F1F1F1]",
+      background: "bg-[#000000] dark:bg-[#F1F1F1]",
+      foreground: "text-[#F1F1F1] dark:text-[#000000]",
     },
     links: [
       "https://github.com/freckledAsf/dashboard",
