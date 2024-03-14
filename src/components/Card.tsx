@@ -12,7 +12,7 @@ interface Props {
   alt: string;
   fit?: boolean;
   className?: string;
-  onClick?: (id: string) => void;
+  onClick?: () => void;
   children?: React.ReactNode;
 }
 
@@ -24,14 +24,18 @@ const Card = ({
   alt,
   fit,
   className,
-  onClick = () => {},
+  onClick,
   children,
 }: Props) => {
   return (
     <div
-      onClick={() => onClick(id ?? "")}
+      onClick={(e) => {
+        e.stopPropagation();
+        onClick?.();
+      }}
       className={cn(
-        "flex flex-col sm:flex-row rounded-xl relative border border-border p-6 gap-6 bg-card text-card-foreground cursor-pointer hover:bg-muted transition-colors",
+        onClick && "cursor-pointer hover:bg-muted",
+        "flex flex-col sm:flex-row rounded-xl relative border border-border p-6 gap-6 bg-card text-card-foreground transition-colors",
         className
       )}
     >
