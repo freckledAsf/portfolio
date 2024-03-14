@@ -5,6 +5,7 @@ import Social from "@/components/Socials";
 import { profile, projects } from "./constants";
 import Searchbar from "@/components/Searchbar";
 import { useMemo, useState } from "react";
+import SocialLink from "@/components/SocialLink";
 
 export default function Home() {
   const [query, setQuery] = useState("");
@@ -33,17 +34,22 @@ export default function Home() {
         </Card>
         <div className="flex flex-wrap gap-5 justify-center">
           {filtered.map((card, index) => (
-            <Card key={index} {...card} className="w-[300px] sm:w-[600px]">
-              {card.links.map((link, index) => (
-                <a
-                  key={index}
-                  href={link}
-                  target={link.includes("mailto") ? "_self" : "_blank"}
-                  rel="noopener noreferrer"
-                >
-                  <Social color={card.color} {...{ link }} />
-                </a>
-              ))}
+            <Card
+              key={index}
+              {...{ ...card }}
+              onClick={() => window.open(card.website)}
+              className="w-[300px] sm:w-[600px]"
+            >
+              {card.repo && (
+                <SocialLink href={card.repo}>
+                  <Social color={card.color} link={card.repo} />
+                </SocialLink>
+              )}
+              {card.website && (
+                <SocialLink href={card.website}>
+                  <Social color={card.color} link={card.website} />
+                </SocialLink>
+              )}
             </Card>
           ))}
         </div>

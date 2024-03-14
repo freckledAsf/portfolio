@@ -9,8 +9,8 @@ interface Props {
 }
 
 const Banner = ({ src, alt, background, className }: Props) => (
-  <div className={cn(background, "flex justify-center items-center", className)}>
-    <div className="relative size-[100px]">
+  <div className={cn(background, "flex justify-center items-center p-12", className)}>
+    <div className="relative size-full">
     <Image {...{ src, alt }} fill />
     </div>
   </div>
