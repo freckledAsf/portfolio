@@ -44,7 +44,7 @@ export const Slack = () => (
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
     viewBox="0 0 127 127"
-    className={cn(iconStyle, "bg-white p-2")}
+    className={cn(iconStyle, "bg-slate-800 dark:bg-white p-2")}
   >
     <path
       d="M27.2 80c0 7.3-5.9 13.2-13.2 13.2C6.7 93.2.8 87.3.8 80c0-7.3 5.9-13.2 13.2-13.2h13.2V80zm6.6 0c0-7.3 5.9-13.2 13.2-13.2 7.3 0 13.2 5.9 13.2 13.2v33c0 7.3-5.9 13.2-13.2 13.2-7.3 0-13.2-5.9-13.2-13.2V80z"
@@ -70,7 +70,7 @@ export const Gmail = () => (
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
     viewBox="52 42 88 66"
-    className={cn(iconStyle, "bg-white p-2")}
+    className={cn(iconStyle, "bg-slate-800 dark:bg-white p-2")}
   >
     <path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6" />
     <path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15" />
