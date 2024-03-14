@@ -5,36 +5,36 @@ import { Skeleton } from "./ui/skeleton";
 import Banner from "./Banner";
 
 interface Props {
+  id?: string;
   title: string;
   description: string;
   src: string;
   alt: string;
   fit?: boolean;
   className?: string;
+  onClick?: (id: string) => void;
   children?: React.ReactNode;
 }
 
 const Card = ({
+  id,
   title,
   description,
   src,
   alt,
   fit,
   className,
+  onClick = () => {},
   children,
 }: Props) => {
   return (
     <div
+      onClick={() => onClick(id ?? "")}
       className={cn(
-        "flex flex-col sm:flex-row rounded-xl relative border border-border p-6 gap-6 bg-card text-card-foreground",
+        "flex flex-col sm:flex-row rounded-xl relative border border-border p-6 gap-6 bg-card text-card-foreground cursor-pointer hover:bg-muted transition-colors",
         className
       )}
     >
-      {/*
-      <div className="absolute top-1/2 -right-4 -translate-y-1/2 p-2 bg-card border border-border rounded-full cursor-pointer transition-colors hover:bg-gray-200">
-        <ArrowRightIcon className="size-4" />
-      </div>
-      */}
       <Avatar className="absolute top-2 right-2 sm:static sm:flex size-[32px] sm:size-[180px]">
         <AvatarImage
           className={cn(fit && "object-scale-down", "rounded-full")}
